@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div class="calculadora">
+            <div class="display">
+                {{ display }}
+            </div>
+        </div>
+        <div class="linha">
+            <button class="operador" title="operador" type="button" onclick="">AC</button>
+        </div>
+        <div class="linha">
+            <button class="number" title="number" type="button" onclick="">7</button>
+            <button class="number" title="number" type="button" onclick="">8</button>
+            <button class="number" title="number" type="button" onclick="">9</button>
+            <button class="operador" title="operador" type="button" onclick="">/</button>
+        </div>
+        <div class="linha">
+            <button class="number" title="number" type="button" onclick="">4</button>
+            <button class="number" title="number" type="button" onclick="">5</button>
+            <button class="number" title="number" type="button" onclick="">6</button>
+            <button class="operador" title="operador" type="button" onclick="">x</button>
+        </div>
+        <div class="linha">
+            <button class="number" title="number" type="button" onclick="">3</button>
+            <button class="number" title="number" type="button" onclick="">2</button>
+            <button class="number" title="number" type="button" onclick="">1</button>
+            <button class="operador" title="operador" type="button" onclick="">-</button>
+        </div>
+        <div class="linha">
+            <button class="point" title="point" type="button" onclick="">.</button>
+            <button class="number" title="number" type="button" onclick="">0</button>
+            <button class="igual" title="igual" type="button" onclick="">=</button>
+            <button class="operador" title="operador" type="button" onclick="">+</button>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="script.js"></script>
