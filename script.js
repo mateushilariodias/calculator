@@ -4,32 +4,47 @@ createApp({
     data(){
         return{
             display:'0',
-            numeroAtual:null,
-            numeroAnterior:null,
-            operador:null,
+            currentNumber:null,
+            previousNumber:null,
+            operator:null,
         }
     },
     methods:{
-        lidarBotao(botao){
-            switch(botao){
+        handleButton(button){
+            switch(button){
                 case "*":
                 case "-":
                 case "+":
                 case '/':
-                    this.lidarOperador(botao)
+                    this.handleOperator(button)
                     break
                 case ".":
-                    this.lidarDecimal()
+                    this.handleDecimal()
                     break
                 case "=":
-                    this.lidarIgual()
+                    this.handleEqual()
                     break
                 case "AC":
-                    this.lidarClear()
+                    this.handleClear()
                     break
                 default:
-                    this.lidarNumero()
+                    this.handleNumber(button)
             }
+        },
+        handleOperator(){
+
+        },
+        handleDecimal(){
+
+        },
+        handleEqual(){
+
+        },
+        handleClear(){
+
+        },
+        handleNumber(){
+
         }
     }
 }).mount("#app")

@@ -4,44 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 
 <body>
     <div id="app">
-        <div class="calculadora">
+        <div class="calculator">
             <div class="display">
                 {{ display }}
             </div>
         </div>
-        <div class="linha">
-            <button class="operador" title="operador" type="button" onclick="">AC</button>
+        <div class="line">
+            <button class="operator" title="operator" type="button" @click="handleButton('AC')">AC</button>
         </div>
-        <div class="linha">
-            <button class="number" title="number" type="button" onclick="">7</button>
-            <button class="number" title="number" type="button" onclick="">8</button>
-            <button class="number" title="number" type="button" onclick="">9</button>
-            <button class="operador" title="operador" type="button" onclick="">/</button>
+        <div class="line">
+            <button class="number" title="number" type="button" @click="handleButton('7')">7</button>
+            <button class="number" title="number" type="button" @click="handleButton('8')">8</button>
+            <button class="number" title="number" type="button" @click="handleButton('9')">9</button>
+            <button class="operator" title="operator" type="button" @click="handleButton('/')">/</button>
         </div>
-        <div class="linha">
-            <button class="number" title="number" type="button" onclick="">4</button>
-            <button class="number" title="number" type="button" onclick="">5</button>
-            <button class="number" title="number" type="button" onclick="">6</button>
-            <button class="operador" title="operador" type="button" onclick="">x</button>
+        <div class="line">
+            <button class="number" title="number" type="button" @click="handleButton('4')">4</button>
+            <button class="number" title="number" type="button" @click="handleButton('5')">5</button>
+            <button class="number" title="number" type="button" @click="handleButton('6')">6</button>
+            <button class="operator" title="operator" type="button" @click="handleButton('*')">*</button>
         </div>
-        <div class="linha">
-            <button class="number" title="number" type="button" onclick="">3</button>
-            <button class="number" title="number" type="button" onclick="">2</button>
-            <button class="number" title="number" type="button" onclick="">1</button>
-            <button class="operador" title="operador" type="button" onclick="">-</button>
+        <div class="line">
+            <button class="number" title="number" type="button" @click="handleButton('3')">3</button>
+            <button class="number" title="number" type="button" @click="handleButton('2')">2</button>
+            <button class="number" title="number" type="button" @click="handleButton('1')">1</button>
+            <button class="operator" title="operator" type="button" @click="handleButton('-')">-</button>
         </div>
-        <div class="linha">
-            <button class="point" title="point" type="button" onclick="">.</button>
-            <button class="number" title="number" type="button" onclick="">0</button>
-            <button class="igual" title="igual" type="button" onclick="">=</button>
-            <button class="operador" title="operador" type="button" onclick="">+</button>
+        <div class="line">
+            <button class="point" title="point" type="button" @click="handleButton('.')">.</button>
+            <button class="number" title="number" type="button" @click="handleButton('0')">0</button>
+            <button class="equal" title="equal" type="button" @click="handleButton('=')">=</button>
+            <button class="operator" title="operator" type="button" @click="handleButton('+')">+</button>
         </div>
     </div>
 </body>
