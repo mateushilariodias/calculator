@@ -1,50 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Inclusão da biblioteca Vue.js -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 
 <body>
+    <!-- Container principal da aplicação Vue.js -->
     <div id="app">
+        <!-- Container da calculadora -->
         <div class="calculator">
+            <!-- Visor da calculadora -->
             <div class="display">
-                {{ display }}
+                {{ display }} <!-- Mostra o resultado da operação -->
             </div>
         </div>
+        <!-- Linha de botões -->
         <div class="line">
+            <!-- Botão para limpar a calculadora -->
             <button class="operator" title="operator" type="button" @click="handleButton('AC')">AC</button>
         </div>
+        <!-- Linha de botões -->
         <div class="line">
+            <!-- Botões numéricos -->
             <button class="number" title="number" type="button" @click="handleButton('7')">7</button>
             <button class="number" title="number" type="button" @click="handleButton('8')">8</button>
             <button class="number" title="number" type="button" @click="handleButton('9')">9</button>
+            <!-- Botão de divisão -->
             <button class="operator" title="operator" type="button" @click="handleButton('/')">/</button>
         </div>
+        <!-- Linha de botões -->
         <div class="line">
+            <!-- Botões numéricos -->
             <button class="number" title="number" type="button" @click="handleButton('4')">4</button>
             <button class="number" title="number" type="button" @click="handleButton('5')">5</button>
             <button class="number" title="number" type="button" @click="handleButton('6')">6</button>
+            <!-- Botão de multiplicação -->
             <button class="operator" title="operator" type="button" @click="handleButton('*')">*</button>
         </div>
+        <!-- Linha de botões -->
         <div class="line">
+            <!-- Botões numéricos -->
             <button class="number" title="number" type="button" @click="handleButton('3')">3</button>
             <button class="number" title="number" type="button" @click="handleButton('2')">2</button>
             <button class="number" title="number" type="button" @click="handleButton('1')">1</button>
+            <!-- Botão de subtração -->
             <button class="operator" title="operator" type="button" @click="handleButton('-')">-</button>
         </div>
+        <!-- Linha de botões -->
         <div class="line">
+            <!-- Botão para ponto decimal -->
             <button class="point" title="point" type="button" @click="handleButton('.')">.</button>
+            <!-- Botão numérico -->
             <button class="number" title="number" type="button" @click="handleButton('0')">0</button>
+            <!-- Botão de igualdade -->
             <button class="equal" title="equal" type="button" @click="handleButton('=')">=</button>
+            <!-- Botão de adição -->
             <button class="operator" title="operator" type="button" @click="handleButton('+')">+</button>
         </div>
     </div>
 </body>
 
 </html>
+<!-- Inclusão do arquivo de script Vue.js -->
 <script src="script.js"></script>

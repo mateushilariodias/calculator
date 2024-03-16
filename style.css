@@ -1,43 +1,64 @@
+/* Define a cor de fundo para todo o corpo da página */
+body {
+    background-color: #000; /* Preto */
+}
+
+/* Estilo para a calculadora */
 .calculator {
-    width: 150px;
+    width: 300px; /* Largura da calculadora */
+    margin: 20px auto; /* Margem superior e inferior de 20px, e alinhamento automático horizontal */
+    border: 2px solid #555; /* Borda sólida de 2px com cor cinza */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno de 10px */
+    background-color: #222; /* Cor de fundo mais escura para a calculadora */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra suave */
 }
 
+/* Estilo para as linhas de botões da calculadora */
 .line {
-    display: flex;
+    display: flex; /* Define como os elementos filhos devem ser exibidos */
+    justify-content: center; /* Alinhamento horizontal ao centro */
 }
 
+/* Estilo para os botões da calculadora */
 button {
-    width: 35px;
-    height: 35px;
-    border-radius: 5px;
-    border: none;
-    background-color: #d8d0e5;
-    margin: 1px;
+    width: 60px; /* Largura dos botões */
+    height: 60px; /* Altura dos botões */
+    border-radius: 8px; /* Bordas arredondadas */
+    border: none; /* Sem borda */
+    background-color: #444; /* Cor de fundo mais escura para os botões */
+    margin: 5px; /* Margem entre os botões */
+    font-size: 24px; /* Tamanho da fonte */
+    color: #fff; /* Cor do texto */
+    cursor: pointer; /* Mostra o cursor de mão ao passar sobre os botões */
 }
 
+/* Estilo para os botões quando o cursor passa por cima */
 button:hover {
-    color: white;
-    background-color: #9c65cb;
+    background-color: #666; /* Cor de fundo mais clara */
 }
 
+/* Estilo para os botões quando clicados */
 button:active {
-    color: white;
-    background-color: #4b0f80;
+    background-color: #333; /* Cor de fundo mais escura */
 }
 
-.operator {
-    color: white;
-    background-color: #e38d7b;
+/* Estilo para os botões de operadores, igual e AC (limpar) */
+.operator, .equal, .ac {
+    background-color: #e38d7b; /* Cor de fundo para esses botões */
 }
 
-.equal {
-    color: white;
-    background-color: #4374be;
-}
-
+/* Estilo para o visor da calculadora */
 .display {
-    display: flex;
-    justify-content: end;
-    height: 30px;
-    margin-right: 5px;
+    display: flex; /* Define como os elementos devem ser exibidos */
+    align-items: center; /* Alinhamento vertical */
+    justify-content: flex-end; /* Alinhamento horizontal ao final do contêiner */
+    height: 50px; /* Altura do visor */
+    margin-bottom: 10px; /* Margem inferior de 10px */
+    padding: 0 10px; /* Espaçamento interno de 0 no topo e na base, 10px nos lados */
+    font-size: 24px; /* Tamanho da fonte */
+    background-color: #444; /* Cor de fundo do visor */
+    color: #fff; /* Cor do texto */
+    border: 2px solid #555; /* Borda sólida de 2px com cor cinza */
+    border-radius: 5px; /* Bordas arredondadas */
 }
